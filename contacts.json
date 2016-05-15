@@ -1,0 +1,16 @@
+[
+    {
+        "first_name": "simon",
+        "last_name": "norton",
+        "email": "simon.norton@gmail.com",
+        "address": "10 ashbourne court",
+        "telephone": 123456789
+    },
+        {
+        "first_name": "eva",
+        "last_name": "norton",
+        "email": "eva.norton@gmail.com",
+        "address": "10 ashbourne court",
+        "telephone": 4567898965
+    }
+]
