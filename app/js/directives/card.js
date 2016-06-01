@@ -4,7 +4,7 @@ function CardDirective() {
     restrict: 'EA',
     templateUrl: 'directives/card.html',
     scope: {
-      title: '@'
+      contacts: '='
     }
   };
 }
