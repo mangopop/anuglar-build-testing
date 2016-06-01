@@ -6,10 +6,17 @@ function OnConfig($stateProvider, $locationProvider, $urlRouterProvider) {
   $stateProvider
   .state('Home', {
     url: '/',
-    controller: 'ContactsCtrl as home',
+    controller: 'ContactsCtrl as vm',
     templateUrl: 'home.html',
-    title: 'Home'
+    title: 'Contacts'
+  })
+    .state('Example', {
+    url: '/example',
+    controller: 'ExampleCtrl as vm',
+    templateUrl: 'home.html',
+    title: 'Contacts'
   });
+  
 
   $urlRouterProvider.otherwise('/');
 

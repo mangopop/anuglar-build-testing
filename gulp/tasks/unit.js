@@ -9,7 +9,7 @@ gulp.task('unit', ['views'], function(cb) {
 
   new Server({
     configFile: path.resolve(__dirname, '../..', config.test.karma),
-    singleRun: true
+    singleRun: false
   }, cb).start();
 
 });
