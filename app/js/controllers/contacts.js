@@ -1,4 +1,4 @@
-function ContactsCtrl($scope,ContactsService) {
+function ContactsCtrl(ContactsService) {
   'ngInject';
   // ViewModel
   const vm = this;
