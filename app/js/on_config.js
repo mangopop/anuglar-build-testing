@@ -9,13 +9,13 @@ function OnConfig($stateProvider, $locationProvider, $urlRouterProvider) {
     controller: 'ContactsCtrl as vm',
     templateUrl: 'home.html',
     title: 'Contacts'
-  })
-    .state('Example', {
-    url: '/example',
-    controller: 'ExampleCtrl as vm',
-    templateUrl: 'home.html',
-    title: 'Contacts'
   });
+  //   .state('Example', {
+  //   url: '/example',
+  //   controller: 'ExampleCtrl as vm',
+  //   templateUrl: 'home.html',
+  //   title: 'Contacts'
+  // });
   
 
   $urlRouterProvider.otherwise('/');

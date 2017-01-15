@@ -4,6 +4,9 @@ function ContactsCtrl(ContactsService) {
   const vm = this;
   vm.contacts = [];
 
+  vm.hero = {};
+  vm.hero.name = 'Simon';
+
   ContactsService.get().then(
     function (data) {
       console.log(data);

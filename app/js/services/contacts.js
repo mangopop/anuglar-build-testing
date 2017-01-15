@@ -5,7 +5,7 @@ function ContactsService($http) {
 
 //ng-repeat will wait if we do it this way
   service.get = function () {
-    return $http.get('http://localhost:3009/cards').then(
+    return $http.get('https://jsonplaceholder.typicode.com/users').then(
       function (response) {
         return response.data;
       }, function (err, status) {

@@ -16,11 +16,10 @@ describe('Unit: ContactsService', function () {
   });
 
   var contacts = {
-    firstName: 'simon',
-    lastName: 'norton',
+    username: 'simon norton',
     email: 'simon.norton@gmail.com',
     address: '10 ashbourne court',
-    telephone: 123456789
+    phone: 123456789
   };
 
   it('should exist', function () {
@@ -28,7 +27,7 @@ describe('Unit: ContactsService', function () {
   });
 
   it('should retrieve data', function (done) {
-    http.expect('GET', 'http://localhost:3009/cards').respond(201, contacts);
+    http.expect('GET', 'https://jsonplaceholder.typicode.com/users').respond(201, contacts);
 
     service.get().then((result) => {
       expect(result).toEqual(contacts);

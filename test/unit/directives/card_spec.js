@@ -19,11 +19,10 @@ describe('Unit: CardDirective', function() {
       // scope.message = 'A sample message';
       
       scope.contacts = [{
-        firstName: 'simon',
-        lastName: 'norton',
+        username: 'simon norton',
         email: 'simon.norton@gmail.com',
         address: '10 ashbourne court',
-        telephone: 123456789
+        phone: 123456789
       }];
       
       // scope.contacts = 'test';
@@ -41,7 +40,7 @@ describe('Unit: CardDirective', function() {
   });
   //<span class="card-title">{{contact.firstName}} {{contact.lastName}}</span>
   it('should bind contacts to its template', function() {
-    expect(element.find('span').text()).toBe(scope.contacts[0].firstName+' '+scope.contacts[0].lastName);
+    expect(element.find('span').text()).toBe(scope.contacts[0].username);
   });
   //
 
